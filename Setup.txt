@@ -1,0 +1,14 @@
+First log in into GitHub
+Creat new Repo
+Copy the Git cmds
+Open GitBash,make a directory(mkdir RelevelGit)
+cd RelevelGit
+Then paste the whole thing, then press enter
+Then type code and vscode will open
+Then create your code files
+In terminal:
+  git status :will show the changes
+  git add .  :will add the file to commit
+  git commit -m "Initial Commit"  :will commit changes to the branch
+  git push  :will finally push these to the Repo
+  
