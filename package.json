@@ -1,0 +1,22 @@
+{
+  "name": "relevelgit",
+  "version": "1.0.0",
+  "description": "E-Commerce Website",
+  "main": "Index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hardik200404/Relevel.git"
+  },
+  "author": "Hardik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hardik200404/Relevel/issues"
+  },
+  "homepage": "https://github.com/Hardik200404/Relevel#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
