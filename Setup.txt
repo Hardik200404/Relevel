@@ -14,3 +14,17 @@ In terminal:
   
 *we can add a ".gitignore" file in base folder, any file with path,
 *mentioned inside it will get ignored.
+
+Creating your own branch from master branch
+first clone the public repo of Himanshu sir
+git clone https://github.com/hparwani2/module-2.git
+
+then "git branch" will give the list of branch and in which we are in
+then "git checkout -b Hardik" will create new branch from master named Hardik
+
+so if lets say there have been some changes in master branch
+we can check it by typing "git status", will the changes happened 
+
+then we can do is "git add." will add all changes,we can add path to add particular change
+then "git commit"
+then "git push origin Hardik" will push the changes to my branch 
