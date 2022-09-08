@@ -12,3 +12,5 @@ In terminal:
   git commit -m "Initial Commit"  :will commit changes to the branch
   git push  :will finally push these to the Repo
   
+*we can add a ".gitignore" file in base folder, any file with path,
+*mentioned inside it will get ignored.
