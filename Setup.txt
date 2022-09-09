@@ -28,3 +28,6 @@ we can check it by typing "git status", will the changes happened
 then we can do is "git add." will add all changes,we can add path to add particular change
 then "git commit"
 then "git push origin Hardik" will push the changes to my branch 
+
+"git stash" incase of file deletion in my branch
+"git fetch" incase of branch deletion
