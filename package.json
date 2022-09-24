@@ -2,7 +2,7 @@
   "name": "relevelgit",
   "version": "1.0.0",
   "description": "E-Commerce Website",
-  "main": "Index.js",
+  "main": "express_server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Hardik200404/Relevel#readme",
   "dependencies": {
+    "express": "^4.18.1",
     "lodash": "^4.17.21"
   }
 }
