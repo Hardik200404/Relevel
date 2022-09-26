@@ -1,6 +1,6 @@
 let {Sequelize}=require('sequelize');
 function connectdb(){
-    let seq=new Sequelize('ecommerce','root','Greyline@20',{
+    let seq=new Sequelize('ecommerce','root','12345',{
         host:'localhost',
         port:3306,
         dialect:'mysql',
