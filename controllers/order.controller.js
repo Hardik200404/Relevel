@@ -1,9 +1,9 @@
-let {define_order}=require('./../Models/orders.model.js');
+let {order_model}=require('./../Models/orders.model.js');
 
 class order_controller{
     schema;
     constructor(){
-        this.schema=define_order();//this will trigger the function in user model
+        this.schema=order_model;//this will trigger the function in order model
     }
     fetch_all_order(limit=null,orderbycol='created_at',orderbyseq='asc'){
         return this.schema.findAll({

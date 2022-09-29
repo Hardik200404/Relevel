@@ -33,12 +33,12 @@ let execute= require('./sequelize_connection');
 // execute.execute_with_sync(user_results);
 
 //fetch user by id
-// let id=2;
-// let result=user_controller.user_controller_object.fetch_user(id)
-// .then((user)=>{
-//     console.log(user.dataValues)
-// })
-// execute.execute_with_sync(result);
+let id=1;
+let result=user_controller.user_controller_object.fetch_user(id,true)
+.then((user)=>{
+    console.log(user.dataValues)
+})
+execute.execute_with_sync(result);
 
 // //fetch all products
 // let product_results=product_controller.product_controller_object.fetch_all_product()
@@ -51,13 +51,21 @@ let execute= require('./sequelize_connection');
 // })
 // execute.execute_with_sync(product_results);
 
-//fetch all products
-let orders_results=order_controller.order_controller_object.fetch_all_order()
-.then((data)=>{
-    return data.map((order)=>order.dataValues)
-}).then((data)=>{
-    data.forEach((order)=>{
-        console.log(order);
-    })
-})
-execute.execute_with_sync(orders_results);
+// //fetch product by id
+// let id=6;
+// let result=product_controller.product_controller_object.fetch_product(id,true)
+// .then((product)=>{
+//     console.log(product.dataValues);
+// })
+// execute.execute_with_sync(result);
+
+// //fetch all orders
+// let orders_results=order_controller.order_controller_object.fetch_all_order()
+// .then((data)=>{
+//     return data.map((order)=>order.dataValues)
+// }).then((data)=>{
+//     data.forEach((order)=>{
+//         console.log(order);
+//     })
+// })
+// execute.execute_with_sync(orders_results);

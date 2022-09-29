@@ -1,7 +1,8 @@
 let {seq}=require('./../sequelize_connection.js');
-let { DataTypes }=require('sequelize');
+let {DataTypes}=require('sequelize');
+let {order_model}=require('./orders.model');
 function define_product(){
-    let test_product_model=seq.define('products',{
+    let product_model=seq.define('products',{
         id:{
             type:DataTypes.BIGINT,
             allowNull:false,
@@ -26,7 +27,16 @@ function define_product(){
             defaultValue:seq.fn('NOW'),
         }
     });
-    return test_product_model
+    //defining the product and order model join
+    product_model.hasMany(order_model,{
+        foreignKey:'product_id'
+    })
+    order_model.belongsTo(product_model,{
+        foreignKey:'product_id'
+    })
+
+    return product_model
 }
 
-module.exports={define_product};
+let product_model=define_product();
+module.exports={product_model};

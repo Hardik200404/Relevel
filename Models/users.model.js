@@ -1,7 +1,8 @@
 let {seq}=require('./../sequelize_connection.js');
 let { DataTypes }=require('sequelize');
+let { order_model }=require('./orders.model');
 function define_user(){
-    let test_user_model=seq.define('users',{
+    let user_model=seq.define('users',{
         id:{
             type:DataTypes.BIGINT,
             allowNull:false,
@@ -26,6 +27,15 @@ function define_user(){
             defaultValue:seq.fn('NOW'),
         }
     });
-    return test_user_model
+    
+    //defining the user and order model join
+    user_model.hasMany(order_model,{
+        foreignKey:'user_id'
+    })
+    order_model.belongsTo(user_model,{
+        foreignKey:'user_id'
+    })
+
+    return user_model
 }
 module.exports={define_user};

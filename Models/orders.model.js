@@ -1,7 +1,7 @@
 let {seq}=require('./../sequelize_connection.js');
 let { DataTypes }=require('sequelize');
 function define_order(){
-    let test_order_model=seq.define('orders',{
+    let order_model=seq.define('orders',{
         id:{
             type:DataTypes.BIGINT,
             allowNull:false,
@@ -30,7 +30,7 @@ function define_order(){
             defaultValue:seq.fn('NOW'),
         }
     });
-    return test_order_model
+    return order_model
 }
-
-module.exports={define_order};
+let order_model=define_order();
+module.exports={order_model};
