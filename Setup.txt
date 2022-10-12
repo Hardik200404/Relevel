@@ -1,10 +1,10 @@
 First log in into GitHub
 Creat new Repo
-Copy the Git cmds
+Copy the Git Repo link
 Open GitBash,make a directory(mkdir RelevelGit)
 cd RelevelGit
-Then paste the whole thing, then press enter
-Then type code and vscode will open
+Then in terminal of that directory, type
+git remote add origin <Git Repo Link>
 Then create your code files
 In terminal:
   git status :will show the changes
